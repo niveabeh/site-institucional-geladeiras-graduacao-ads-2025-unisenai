@@ -75,7 +75,7 @@ section #topo{
     width: 900px;
     margin: 0px auto;
     height: 250px;
-    background-color: red;
+    background-color: rgba(0, 153, 255, 0.185);
 }
 
 .geladeira{
