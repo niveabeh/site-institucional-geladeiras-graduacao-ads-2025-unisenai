@@ -51,7 +51,6 @@ nav .opcao{
 nav .opcao:hover{
     background-color: rgb(4, 124, 126);
 }
-/* area geral para conteúdos de casa página */
 section{
     clear: both;
     min-height: 1000px;
@@ -68,8 +67,6 @@ footer{
     padding: 10px;
 
 }
-/*configuração da página inicial */
-
 section #topo{
 
     width: 900px;
@@ -141,7 +138,6 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: #83afd3;
 }
-/* Configuração da página fale Conosco */
 .faleConosco{
 
     width: 300px;
