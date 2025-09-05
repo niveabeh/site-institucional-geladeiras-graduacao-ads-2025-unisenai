@@ -4,48 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"
-        href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
     <title>Prática 1 HTML e CSS</title>
 </head>
 
 <body>
     <header>
-        <img src="imgs/logo.png" alt="Logo da págima"
-            title="Logo da página">
-        <h1>Geladeiras & Outros - Fale Conosco</h1>
+        <div class="container-header">
+            <div class="container-logo">
+                <img src="imgs/logo.png" alt="Logo da págima" title="Logo da página">
+                <p>Geladeiras</p>
+            </div>
+            <nav>
+                <a href="index.html">
+                    <div class="opcao">Início</div>
+                </a>
+                <a href="produtos.html">
+                    <div class="opcao">Geladeiras e Freezers</div>
+                </a>
+                <a href="faleconosco.html">
+                    <div class="opcao">Fale Conosco</div>
+                </a>
+            </nav>
+        </div>
     </header>
-    <nav>
-    
-        <a href="index.html">
-            <div class="opcao">Início</div>
-        </a>
-        <a href="produtos.html">
-            <div class="opcao">Geladeiras e Freezers</div>
-        </a>
-        <a href="faleconosco.html">
-            <div class="opcao">Fale Conosco</div>
-        </a>
 
-    </nav>
-   
+
     <section>
 
         <h2>Fale Conosco!</h2>
-        <p>Ficou com alguma dúvida? Preencha este formulário e entraremos em contato</p>
+        <p>Ficou com alguma dúvida? Preencha este <br>formulário e entraremos em contato</p>
         <form name="frmfaleconosco" id="frmFormulario" method="post" action="#">
-            <legend>Dados pessoais:</legend>
             <fieldset class="faleConosco">
+                <legend>Dados pessoais:</legend>
                 <label for="nome">Nome:</label>
-                <input type="text" name="txtnome" id="nome">
+                <input type="text" name="txtnome" id="nome" placeholder="Seu nome completo">
                 <label for="fone">Telefone</label>
-                <input type="text" name="txtfone" id="fone">
+                <input type="text" name="txtfone" id="fone" placeholder="(11) 99999-9999">
                 <label for="email">Email</label>
-                <input type="email" name="txtemail" id="email"> 
-             </fieldset>
-             <fieldset class="faleConosco">
+                <input type="email" name="txtemail" id="email" placeholder="seu@email.com">
+            </fieldset>
+            <fieldset class="faleConosco">
                 <legend>Motivo do contato:</legend>
-                <label  for="selmotivo">Motivo</label>
+                <label for="selmotivo">Motivo</label>
                 <select name="selmotivo" id="selmotivo">
                     <option value="">Escolha</option>
                     <option value="RE">Reclamação</option>
@@ -53,20 +54,22 @@
                     <option value="PR">Informação sobre produto</option>
                 </select>
                 <label for="comentario">Comentario</label>
-                <textarea name="txacomentario" id="comentario"></textarea>
-                <div> 
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
+                <textarea name="txacomentario" id="comentario" placeholder="Digite aqui seu comentário"></textarea>
+                <div class="container-botao">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
                 </div>
-               
-              
-             </fieldset>
+
+
+            </fieldset>
         </form>
-        <p id="respAlert" style="color: black; font-size: 1rem;"></p>
+        <p id="respAlert" style="color: rgb(255, 0, 0); font-size: 1rem;"></p>
 
     </section>
     <script src="js/main.js"></script>
-    <footer>Copryringht &copy; ADS2025</footer>
+    <footer>
+        Copryringht &copy; ADS2025
+    </footer>
 </body>
 
 </html>
