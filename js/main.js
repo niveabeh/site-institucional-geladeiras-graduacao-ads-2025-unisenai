@@ -5,12 +5,27 @@ formulario.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
+
+
     const validaNome = /^[A-zà-ü]{3,}([ ][A-zà-ü]{2,}?)+$/ig;
+
+
+
+
     const validaFone = /^[(][0-9]{2}[)][ ][0-9]{4,5}[-][0-9]{4}$/;
+
+
+
+
     const validaEmail = /^[a-z]{3,}(.)?([a-z]{3,})?([0-9]{1,})?[@][a-z]{3,}[.][a-z]{3}[.]?(br)?$/;
+
+    const validacep = /^[0-9]{5}[-][0-9]{3}$/;
+
+    
     let nome = document.getElementById("nome").value;
     let fone = document.getElementById("fone").value;
     let email = document.getElementById("email").value;
+    let cep = document.getElementById("cep").value;
 
 
     if (!validaNome.test(nome)) {
@@ -27,6 +42,10 @@ formulario.addEventListener("submit", function (e) {
     if (!validaEmail.test(email)) {
         respAlert.innerText = `Por favor, preencha o campo com um e-mail válido`;
         email.focus();
+    }
+    if (!validacep.test(cep)) {
+        respAlert.innerText = `Por favor, preencha o campo com um cep valido`;
+        cep.focus();
     }
 
     respAlert.respAlert.innerText = `Formulário enviado com sucesso!`;
