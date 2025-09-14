@@ -1,8 +1,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/niveabeh/site-institucional-geladeiras-graduacao-ads-2025-unisenai/blob/main/imgs/img-prod-geladeira/pag-inicial.png
-" alt="Visualização da primeria tela do projeto- tela home" width="500"/>
+  <img src="https://github.com/niveabeh/site-institucional-geladeiras-graduacao-ads-2025-unisenai/blob/main/imgs/img-prod-geladeira/pag-inicial.png" alt="Visualização da primeria tela do projeto- tela home" width="500"/>
 </p>
 
 <p align="center">
